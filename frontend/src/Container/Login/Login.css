@@ -1,0 +1,65 @@
+.cp__login{
+    background-color: var(--prim-bg-color);
+    max-width: 100vw;
+    min-height: calc(100vh - 12vh);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cp__login-container{
+    width: 30%;
+    min-height: 90%;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    position: relative;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+}
+
+.cp__login-container > h1{
+    font-size: 2.8vmax;
+    letter-spacing: 5px;
+}
+
+.cp__login-input-container{
+    flex: 1;
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.cp__login-input-container > div{
+    display: flex;
+    flex-direction: column;
+}
+
+.cp__login-input-container label{
+    font-size: 1.7vmax;
+    color: var(--prim-bg-color);
+}
+
+.cp__login-container input,.cp__login-container select{
+    background-color: transparent;
+    border: none;
+    border-bottom: solid 2px var(--prim-bg-color);
+    width: 100%;
+    outline: none;
+    color: white;
+    font-size: 1.6vmax;
+}
+
+.cp__login-container option{
+    color: black;
+}
+
+.cp__login-container > button{
+    flex: 0.15;
+    width: 50%;
+    font-size: 1.8vmax;
+}

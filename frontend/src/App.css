@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@100;300;400;500&display=swap');
+
+:root{
+    --prim-bg-color: rgb(0, 129, 250);
+    --sec-bg-color: rgb(0, 129, 250);
+    --font-color: white;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Alkatra";
+    text-decoration: none;
+}
+
+.cp__margin-navbar{
+    margin-top: 12vh;
+}
+
+.cp__margin{
+    margin: 2rem;
+}
+
+.cp__padding{
+    padding: 3rem 2rem;
+}
+
+.cp__btn{
+    display: block;
+    width: 25%;
+    padding: 0.2vmax;
+    font-size: 1.7vmax;
+    color: black;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+    margin: 3vmax auto;
+}
+
+.cp__btn:hover{
+    padding: 0.2vmax;
+    font-size: 1.7vmax;
+    color: white;
+    border: solid 2px white;
+    cursor: pointer;
+    background-color: transparent;
+}

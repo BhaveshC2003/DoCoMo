@@ -1,0 +1,12 @@
+.cp__tags{
+    width: fit-content;
+    height: fit-content;
+    padding: 3px 5px;
+    color: white;
+    display: flex;
+    align-items: center;
+    background-color: var(--prim-bg-color);
+    border-radius: 8px;
+    font-size: 1.1vmax;
+    margin: 3px;
+}

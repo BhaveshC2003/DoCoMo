@@ -1,0 +1,100 @@
+.cp__signup-teacher{
+    min-height: 100vh;
+    max-width: 100vw;
+    
+}
+
+.cp__signup-teacher-container{
+    width: 75%;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.cp__signup-teacher-container > h1{
+    color: white;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 1vmax;
+    font-size: 3vmax;
+    text-transform: uppercase;
+}
+
+.cp__signup-teacher-container > div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cp__signup-teacher-input{
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    margin: 1.3vmax 1.5vmax;
+    color: var(--prim-bg-color);
+}
+
+.cp__signup-teacher-input{
+    font-size: 1.2vmax;
+}
+
+.cp__signup-teacher-input > input,.cp__signup-teacher-input > select,.cp__signup-teacher-input > textarea{
+    border: none;
+    background-color: transparent;
+    border-bottom: solid 2px var(--prim-bg-color);
+    font-size: 1.5vmax;
+    outline: none;
+    color: var(--font-color);
+}
+
+.cp__signup-teacher-input:nth-child(9){
+    width: 70%;
+    display: flex;
+    justify-content: center;
+}
+
+textarea{
+    resize: none;
+    display: block;
+}
+
+.cp__signup-teacher-input option{
+    color: black;
+}
+
+.cp__signup-teacher-avatar{
+    margin: auto;
+    width: 75%;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+}
+
+.cp__signup-teacher-avatar > p{
+    color: var(--prim-bg-color);
+    font-family: "Alkatra";
+    font-size: 2vmax;
+    margin: auto;
+}
+
+.cp__signup-teacher-avatar > img{
+    height: 100%;
+    border-radius: 100%;
+    margin: auto;
+}
+
+.cp__signup-teacher-avatar > input{
+    width: 20%;
+    color: var(--font-color);
+    font-size: 1.3vmax;
+    margin: auto;
+}
+
+.cp__signup-tags{
+    width: 70%;
+    height: 20vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    padding: 0.8vmax;
+    display: flex;
+    flex-wrap: wrap;
+}

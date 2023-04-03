@@ -1,0 +1,106 @@
+.cp__home{
+    background-color: var(--prim-bg-color);
+    padding-top: 0;
+    color: var(--font-color);
+}
+
+.cp__home-header{
+    height: 75vh;
+}
+
+.cp__home-header > h1{
+    width: 100%;
+    text-align: center;
+    font-size: 3.5vmax;
+}
+
+.cp__home-header-container{
+    display: flex;
+    height: 63vh;
+}
+
+.cp__home-header-left{
+    flex: 1;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.cp__home-header-left > p{
+    font-size: 1.6vmax;
+}
+
+.cp__home-header-right{
+    flex: 0.75;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cp__home-header-right-img{
+    width: 80%;
+    height: 80%;
+    position: relative;
+    z-index: 2;
+}
+.cp__home-header-right-img > img{
+    height: 100%;
+}
+
+.cp__home-study-material{
+    display: flex;
+    height: 75vh;
+    max-width: 100vw;
+}
+
+.cp__home-study-material-left{
+    flex: 1;
+}
+
+.cp__home-study-material-left > h2{
+    font-size: 2.3vmax;
+}
+
+.cp__home-study-material-left > p{
+    font-size: 1.6vmax;
+    font-weight: 300;
+}
+
+.cp__home-study-material-left > button{
+    display: block;
+    width: 25%;
+    padding: 0.2vmax;
+    font-size: 1.7vmax;
+    color: black;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+    margin: 3vmax auto;
+}
+
+.cp__home-study-material-left > button:hover{
+    width: 30%;
+    padding: 0.2vmax;
+    font-size: 1.7vmax;
+    color: white;
+    border: solid 2px white;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.cp__home-study-material-right{
+    flex: 0.75;
+}
+
+.cp__home-study-material-right > div{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.cp__home-study-material-right > div > img{
+    height: 85%;
+    border-radius: 20px;
+}

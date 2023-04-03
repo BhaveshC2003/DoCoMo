@@ -1,0 +1,49 @@
+.cp__signup-role{
+    width: 45%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.cp__signup-role > div{
+    display: flex;
+}
+
+.cp__signup-role > div > *{
+    margin: auto;
+}
+
+.cp__signup-role > div > p{
+    color: var(--font-color);
+    font-size: 2vmax;
+}
+
+.cp__signup-role > div > select{
+    font-size: 1.6vmax;
+    border: none;
+    outline: none;
+    padding: 0 0.5vmax;
+    cursor: pointer;
+}
+
+.cp__signup-role > button{
+    display: block;
+    width: 25%;
+    padding: 0.2vmax;
+    font-size: 1.7vmax;
+    color: black;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+    margin: 3vmax auto;
+}
+
+.cp__signup-role > button:hover{
+    width: 30%;
+    padding: 0.2vmax;
+    font-size: 1.7vmax;
+    color: white;
+    border: solid 2px white;
+    cursor: pointer;
+    background-color: transparent;
+}

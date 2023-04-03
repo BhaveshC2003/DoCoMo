@@ -1,0 +1,30 @@
+.cp__signup{
+    max-width: 100vw;
+    min-height: 100vh;
+    background-color: var(--prim-bg-color);
+}
+
+.cp__signup-btn{
+    display: flex;
+}
+
+.cp__signup  button{
+    display: block;
+    width: 20%;
+    padding: 0.2vmax;
+    font-size: 1.7vmax;
+    color: black;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+    margin: 3vmax auto;
+}
+
+.cp__signup button:hover{
+    padding: 0.2vmax;
+    font-size: 1.7vmax;
+    color: white;
+    border: solid 2px white;
+    cursor: pointer;
+    background-color: transparent;
+}

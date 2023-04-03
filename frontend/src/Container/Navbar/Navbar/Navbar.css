@@ -1,0 +1,116 @@
+.cp__navbar{
+    width: 100vw;
+    height: 12vh;
+    background-color: var(--sec-bg-color);
+    display: flex;
+    padding: 0 0.2vmax;
+    top: 0;
+    position: fixed;
+    z-index: 3;
+    opacity: 0.85;
+    backdrop-filter: blur(5px);
+}
+
+.cp__navbar-left{
+    flex: 0.25;
+}
+
+.cp__navbar-left > h2{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    color: white;
+    margin-left: 12px;
+    font-size: 2.3vmax;
+    cursor: pointer;
+}
+
+.cp__navbar-middle{
+    flex: 1;
+}
+
+.cp__navbar-middle > ul{
+    height: 100%;
+    list-style: none;
+    display: flex;
+}
+
+.cp__navbar-middle > ul > li{
+    margin: auto;
+    position: relative;
+    overflow-x: hidden;
+    padding: 0.1vmax 0.5vmax;
+}
+
+.cp__navbar-middle > ul > li::after{
+    content: '';
+    position: absolute;
+    width: 0;
+    border: solid 2px white;
+    left: -4px;
+    bottom: 1px;
+    transition: all 0.2s ease-in-out;
+}
+.cp__navbar-middle > ul > li:hover::after{
+    width: 100%;
+}
+
+.cp__navbar-middle > ul > li > *{
+    color: var(--font-color);
+    font-size: 1.5vmax;
+}
+
+.cp__navbar-right{
+    flex: 0.25;
+}
+
+.cp__navbar-right > div{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cp__navbar-right > div > *{
+    border: none;
+    padding: 0.3vmax 1vmax;
+    font-size: 1.5vmax;
+    margin: auto;
+    color: white;
+}
+
+.cp__navbar-profile{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.cp__navbar-profile-img{
+    height: 70%;
+   cursor: pointer;
+}
+
+.cp__navbar-profile-img > img{
+    height: 100%;
+    border-radius: 50%;
+}
+
+.cp__navbar-profile-container{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.3vmax;
+    position: absolute;
+    bottom: calc(-21vh - 5px);
+    background: #000000;
+    padding: 5rem;
+    border-radius: 10px;
+}
+
+.cp__navbar-profile-container > *{
+    color: white;
+    background-color: transparent;
+    padding: 0.5rem 0.5rem;
+    text-align: center;
+}

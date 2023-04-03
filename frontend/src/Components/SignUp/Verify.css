@@ -1,0 +1,24 @@
+.cp__signup-verify{
+    max-height: 100vh;
+    width: 60%;
+    margin: auto;
+    color: white;
+    text-align: center;
+}
+
+.cp__signup-verify > h1{
+    font-size: 2.7vmax;
+}
+
+.cp__signup-verify > div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6vmax;
+}
+
+.cp__signup-verify > p{
+    font-size: 1.5vmax;
+    font-weight: 200;
+}
+
