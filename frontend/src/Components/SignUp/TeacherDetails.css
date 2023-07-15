@@ -91,7 +91,7 @@ textarea{
 
 .cp__signup-tags{
     width: 70%;
-    height: 20vh;
+    height: auto;
     background-color: rgba(0, 0, 0, 0.4);
     border-radius: 10px;
     padding: 0.8vmax;

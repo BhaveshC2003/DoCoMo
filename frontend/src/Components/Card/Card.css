@@ -1,0 +1,41 @@
+.cp__card{
+    height: 18vh;
+    width: 75%;
+    display: flex;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 8px;
+    padding: 0.5vmax 1vmax;
+}
+
+.cp__card-img{
+    margin-right: 1vmax;
+    cursor: pointer;
+}
+
+.cp__card-img > img{
+    height: 100%;
+    border-radius: 50%;
+}
+
+.cp__card-details{
+    display: flex;
+    width: 100%;
+}
+
+.cp__card-details > div{
+    display: flex;
+    margin: auto;
+}
+
+.cp__card-details > div > b{
+    color: var(--prim-bg-color);
+    margin-right: 8px;
+    font-size: 1.6vmax;
+}
+
+.cp__card-details > div > p{
+    color: white;
+    font-size: 1.5vmax;
+    text-align: center;
+}

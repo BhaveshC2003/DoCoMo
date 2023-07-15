@@ -1,0 +1,57 @@
+.cp__teacher-profile-committees{
+    width: 100%;
+    height: 75%;
+}
+
+.cp__create-committee{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.cp__create-committee > div{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    margin: auto;
+}
+
+.cp__create-committee label{
+    margin-right: 10px;
+    font-size: 2vmax;
+}
+
+.cp__create-committee input[type="file"]{
+    width: 50%;
+    height: 75%;
+    margin: auto 0.5vmax;
+    border: none;
+    outline: none;
+    font-size: 1.5vmax;
+}
+
+.cp__create-committee input[type="text"]{
+    width: 50%;
+    height: 75%;
+    margin: auto 0.5vmax;
+    border: none;
+    outline: none;
+    padding-left: 8px;
+    font-size: 1.5vmax;
+    background-color: transparent;
+    border-bottom: solid 2px var(--prim-bg-color);
+    color: white;
+}
+
+.cp__create-committee textarea{
+    border: none;
+    outline: none;
+    font-size: 1.8vmax;
+    border: solid 2px var(--prim-bg-color);
+    border-radius: 10px;
+}
+
+.cp__create-committee button{
+    margin: 0 auto;
+}

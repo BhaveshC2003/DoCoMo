@@ -1,0 +1,46 @@
+.cp__student-profile{
+    max-width: 100vw;
+    height: 100vh;
+    background-color: var(--prim-bg-color);
+}
+
+.cp__student-profile-container{
+    margin: auto;
+    width: 85%;
+    height: 80%;
+    background-color: var(--prim-bg-color);
+    display: flex;
+}
+
+.cp__student-profile-options{
+    list-style: none;
+    flex: 0.25;
+    height: 100%;
+    padding: 0.8rem;
+    margin-right: 2px;
+    background-color: rgba(0, 0, 0, 0.85);
+    border-radius: 10px;
+}
+
+.cp__student-profile-options > li{
+    cursor: pointer;
+    color: white;
+    font-size: 1.7vmax;
+    text-align: center;
+    position: relative;
+    padding: 2px 0;
+    margin: 2vmin 0;
+}
+
+
+
+.cp__student-profile-options-active{
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+}
+
+.cp__student-profile-details{
+    flex: 1;
+    background-color: rgba(0, 0, 0, 0.85);
+    border-radius: 10px;
+}

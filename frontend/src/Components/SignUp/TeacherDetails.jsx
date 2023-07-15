@@ -24,7 +24,7 @@ const TeacherDetails = ({handleNext}) => {
             case "phoneNumber":
                  return {...state,phoneNumber:payload}
             case "DOB":
-                return {...state,DOB:payload}
+                return {...state,DOB:payload.slice(0,10)}
             case "gender":
                 return {...state,gender:payload}
             case "department":
@@ -44,11 +44,12 @@ const TeacherDetails = ({handleNext}) => {
                 return state
         }
     }
-    const [details,dispatch] = useReducer(reducer,{subjects:[],role:"teacher",avatar:profile,gender:"Male",department:"CS"})
+    const [details,dispatch] = useReducer(reducer,{role:"teacher",avatar:profile,gender:"Male",department:"CS",subjects:[]})
     const handleImage = (e)=>{
         const reader = new FileReader()
         reader.readAsDataURL(e.target.files[0])
         reader.onload = ()=>{
+            console.log(reader.result)
             dispatch({type:"avatar",payload:reader.result})
         }
     }
@@ -128,7 +129,7 @@ const TeacherDetails = ({handleNext}) => {
                 </div>
                 <div className='cp__signup-teacher-input'>
                     <label htmlFor="subjects">Subjects</label>
-                    <select id='subjects' onChange={(e)=>dispatch({type:"addTag",payload:e.target.value})}>
+                    <select name='subjects' id='subjects' onChange={(e)=>dispatch({type:"addTag",payload:e.target.value})}>
                         {
                             subjects.map((sub,i)=><option value={sub} key={sub}>{sub}</option>)
                         }
@@ -136,7 +137,7 @@ const TeacherDetails = ({handleNext}) => {
                 </div>
                 <div className='cp__signup-tags'>
                     {
-                        details.subjects.map((sub,i)=><Tags name={sub} key={i} dispatch={dispatch}/>)
+                        details.subjects && details.subjects.map((sub,i)=><Tags name={sub} key={i} dispatch={dispatch} crossActive={true}/>)
                     }
                 </div>
             </div>

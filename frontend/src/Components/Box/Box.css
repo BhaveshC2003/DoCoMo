@@ -4,8 +4,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: auto;
+    margin: auto 1vmax;
     cursor: pointer;
+    
 }
 
 .cp__box-container{
@@ -64,7 +65,9 @@
 }
 
 .cp__box > h2{
+    color: white;
     font-size: 2vmax;
     letter-spacing: 2px;
     font-weight: 500;
+    white-space: nowrap;
 }

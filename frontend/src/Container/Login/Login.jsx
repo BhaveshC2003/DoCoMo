@@ -35,15 +35,15 @@ const Login = () => {
             <div className='cp__login-input-container'>
                 <div>
                     <label htmlFor="email">Email</label>
-                    <input value={email} id='email' type="email" onChange={(e)=>setEmail(e.target.value)}/>
+                    <input required value={email} id='email' type="email" onChange={(e)=>setEmail(e.target.value)}/>
                 </div>
                 <div>
                     <label htmlFor="password">Password</label>
-                    <input value={password} id='password' type="password" onChange={(e)=>setPassword(e.target.value)}/>
+                    <input required value={password} id='password' type="password" onChange={(e)=>setPassword(e.target.value)}/>
                 </div>
                 <div>
                     <label htmlFor="role">Role</label>
-                    <select value={role} id="role" onChange={(e)=>setRole(e.target.value)}>
+                    <select required value={role} id="role" onChange={(e)=>setRole(e.target.value)}>
                         <option value="student">Student</option>
                         <option value="teacher">Teacher</option>
                     </select>

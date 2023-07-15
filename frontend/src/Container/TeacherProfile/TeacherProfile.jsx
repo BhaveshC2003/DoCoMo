@@ -1,4 +1,8 @@
 import {React,useState} from 'react'
+import Committees from './Committees/Committees'
+import Courses from './Courses/Courses'
+import ProfileTab from './ProfileTab/ProfileTab'
+import StudyMaterial from './StudyMaterial/StudyMaterial'
 import "./TeacherProfile.css"
 
 const TeacherProfile = () => {
@@ -15,8 +19,18 @@ const TeacherProfile = () => {
                     {op}</li>)
                 }
             </ul>
-            <div className='cp__teacher-profile-details'>
-                Content goes here
+            <div className='cp__teacher-profile-details cp__padding'>
+                {
+                    activeOption === 0 && <ProfileTab />
+                }
+                {
+                    activeOption === 1 && <Courses />
+                }
+                {
+                    activeOption === 2 && <Committees />
+                }{
+                    activeOption == 3 && <StudyMaterial />
+                }
             </div>
         </div>
     </div>

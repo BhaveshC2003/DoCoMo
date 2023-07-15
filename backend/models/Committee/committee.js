@@ -15,30 +15,22 @@ const committeeSchema = new mongoose.Schema(
             type:mongoose.Schema.Types.ObjectId,
             ref:"Teacher"
             },
-        logo:{
+        image:{
             public_id:String,
             url:String
         },
         description:String,
-        members:[
-            {
-                student:{
-                    type:mongoose.Schema.Types.ObjectId,
-                    ref:"Student"
-                },
-                role:{
-                    type:String
-                }
-            }
-        ],
         tags:[
             {
                 type:String,
                 minlength:3
             }
-        ]
-        
+        ],
+        createdAt:{
+            type:Date,
+            default:Date.now()
+        }
     }
 )
 
-module.exports = mongoose.exports("Committee",committeeSchema)
+module.exports = mongoose.model("Committee",committeeSchema)

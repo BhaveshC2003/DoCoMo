@@ -6,7 +6,7 @@ const eventSchema = new mongoose.Schema(
             type:String,
             required:[true,"Event name required"]
         },
-        hostedBy:{
+        committee:{
             type:mongoose.Schema.Types.ObjectId,
             ref:"Committee"
         },
@@ -17,29 +17,23 @@ const eventSchema = new mongoose.Schema(
         dueDate:{
             type:Date
         },
-        tags:[
-            {
+        eventDate:{
+            type:Date,
+            default:Date.now()
+        },
+        category:{
                 type:String,
                 minLenght:3
-            }
-        ],
-        participants:[
-            {
-                type:mongoose.Schema.Types.ObjectId,
-                ref:"Student"
-            }
-        ],
+            },
         description:String,
-        images:{
-            banner:{
-                public_id:String,
-                url:String
-                },
-            eventImage:{
-                public_id:String,
-                url:String
-                }
-            }
+        image:{
+            url:String,
+            public_id:String
+            },
+        link:{
+            type:String,
+            required:[true,"Registration link required"]
+        }
 }
 )
 

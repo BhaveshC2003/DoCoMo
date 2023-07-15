@@ -11,11 +11,6 @@ const assignmentSchema = new mongoose.Schema(
             type:String,
             required:[true,"Assignment name required"]
         },
-        links:[
-            {
-                type:String
-            }
-        ],
         createdAt:{
             type:Date,
             default:Date.now()
@@ -33,10 +28,7 @@ const assignmentSchema = new mongoose.Schema(
                     type:Date,
                     default:Date.now()
                 },
-                content:{
-                    public_id:String,
-                    url:String
-                },
+                link:String,
                 grade:{
                     type:Number,
                     default:0

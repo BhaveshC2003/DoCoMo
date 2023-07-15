@@ -43,7 +43,10 @@ const teacherSchema = new mongoose.Schema(
             type:String,
             required:[true,"Department required"]
         },
-        about:String,
+        about:{
+            type:String,
+            default:"Just a teacher teaching to student for a better future"
+        },
         qualification:{
             type:String,
             default:"Not specified"

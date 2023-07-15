@@ -1,0 +1,50 @@
+.cp__teacher-profile-studymaterial{
+    height: 100%;
+}
+
+.cp__teacher-profile-studymaterial label{
+    margin-right: 12px;
+    color: var(--prim-bg-color);
+}
+
+.cp__teacher-profile-studymaterial-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.cp__teacher-profile-studymaterial-file{
+    margin: 1vmax auto;
+}
+
+.cp__teacher-profile-studymaterial-file > input{
+    font-size: 1.3vmax;
+}
+
+.cp__teacher-profile-studymaterial-info{
+    height: 75%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cp__teacher-profile-studymaterial-info > div{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    margin: 1vmax 0.5vmax;
+}
+
+.cp__teacher-profile-studymaterial-info > div >input,.cp__teacher-profile-studymaterial-info > div >select{
+    background-color: transparent;
+    border: none;
+    border-bottom: solid 2px var(--prim-bg-color);
+    color: white;
+    font-size: 1.6vmax;
+    outline: none;
+    flex: 1;
+}
+
+.cp__tags-container{
+    width: 100%;
+    display: flex;
+}

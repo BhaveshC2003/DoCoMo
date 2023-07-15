@@ -43,7 +43,7 @@ const StudentDetails = ({handleNext}) => {
                 return state
         }
     }
-    const [details,dispatch] = useReducer(reducer,{subjects:[],role:"student",avatar:profile,gender:"Male"})
+    const [details,dispatch] = useReducer(reducer,{subjects:[],role:"student",avatar:profile,gender:"Male",branch:"CS"})
     const handleImage = (e)=>{
         const reader = new FileReader()
         reader.readAsDataURL(e.target.files[0])

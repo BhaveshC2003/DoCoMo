@@ -1,0 +1,70 @@
+import {createReducer} from "@reduxjs/toolkit"
+
+const committee = createReducer({},{
+    GET_COMMITTEES_REQUEST:(state,action)=>{
+        return{
+            ...state,
+            loading:true,
+            committees:[]
+        }
+    },
+    GET_COMMITTEES_SUCCESS:(state,action)=>{
+        return{
+            ...state,
+            loading:false,
+            committees:action.payload
+        }
+    },
+    GET_COMMITTEES_FAIL:(state,action)=>{
+        return{
+            ...state,
+            loading:false,
+            error:action.payload
+        }
+    },
+    CREATE_COMMITTEE_REQUEST:(state,action)=>{
+        return{
+            ...state,
+            loading:true,
+        }
+    },
+    CREATE_COMMITTEE_SUCCESS:(state,action)=>{
+        return{
+            ...state,
+            loading:false,
+            success:true
+        }
+    },
+    CREATE_COMMITTEE_FAIL:(state,action)=>{
+        return{
+            ...state,
+            loading:false,
+            success:false
+        }
+    },
+    GET_COMMITTEE_REQUEST:(state,action)=>{
+        return{
+            ...state,
+            loading:true
+        }
+    },
+    GET_COMMITTEE_SUCCESS:(state,action)=>{
+        return{
+            ...state,
+            loading:false,
+            committee:action.payload.committee,
+            members:action.payload.members,
+            isAuthorized:action.payload.isAuthorized
+        }
+    },
+    GET_COMMITTEE_FAIL:(state,action)=>{
+        return{
+            ...state,
+            loading:false,
+            error:action.payload,
+            isAuthorized:false
+        }
+    }
+})
+
+export default committee

@@ -1,0 +1,75 @@
+import {createReducer} from "@reduxjs/toolkit"
+
+const event = createReducer({},{
+    CREATE_EVENT_REQUEST:(state,action)=>{
+        return{
+            ...state,
+            loading:true
+        }
+    },
+    CREATE_EVENT_SUCCESS:(state,action)=>{
+        return{
+            ...state,
+            loading:false,
+            success:true
+        }
+    },
+    CREATE_EVENT_FAIL:(state,action)=>{
+        return{
+            ...state,
+            loading:false,
+            success:false,
+            error:action.payload
+        }
+    },
+    RESET_SUCCESS_EVENT:(state,action)=>{
+        return{
+            ...state,
+            success:false
+        }
+    },
+    GET_EVENTS_REQUEST:(state,action)=>{
+        return{
+            ...state,
+            loading:true,
+            events:null
+        }
+    },
+    GET_EVENTS_SUCCESS:(state,action)=>{
+        return{
+            ...state,
+            loading:false,
+            events:action.payload
+        }
+    },
+    GET_EVENTS_FAIL:(state,action)=>{
+        return{
+            ...state,
+            loading:false,
+            error:action.payload
+        }
+    },
+    GET_EVENTDETAILS_REQUEST:(state,action)=>{
+        return{
+            ...state,
+            loading:true,
+            event:null
+        }
+    },
+    GET_EVENTDETAILS_SUCCESS:(state,action)=>{
+        return{
+            ...state,
+            loading:false,
+            event:action.payload
+        }
+    },
+    GET_EVENTDETAILS_FAIL:(state,action)=>{
+        return{
+            ...state,
+            loading:false,
+            error:action.payload
+        }
+    }
+})
+
+export default event

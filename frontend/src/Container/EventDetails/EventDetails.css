@@ -1,0 +1,81 @@
+.cp__eventdetails{
+    font-family: "Roboto";
+    background-color: var(--prim-bg-color);
+    max-width: 100vw;
+    min-height: 100vh;
+    position: relative;
+}
+
+.cp__eventdetails-container{
+    background-color: rgba(0, 0, 0, 0.8);
+    min-height: 100%;
+}
+
+.cp__eventdetails-up{
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    justify-content: flex-start;
+    margin: 2vmax 0;
+}   
+
+.cp__eventdetails-up > div{
+    width: auto;
+    height: 100%;
+}
+
+.cp__eventdetails-up > div:nth-child(2){
+    margin-left: 2vmax;
+    font-size: 1.5vmax;
+}
+
+.cp__eventdetails-up > div:nth-child(2) div{
+    display: flex;
+}
+
+.cp__eventdetails-up > div:nth-child(2) h2{
+    color: white;
+    letter-spacing: 3px;
+    font-size: 3vmax;
+}
+
+.cp__eventdetails-up > div:nth-child(2) label{
+    color: var(--prim-bg-color);
+    margin-right: 12px;
+}
+
+.cp__eventdetails-up > div:nth-child(2) p{
+    color: white;
+}
+
+.cp__eventdetails-up > div img{
+    height: 100%;
+}
+
+.cp__eventdetails-btn{
+    width: 45vw;
+}
+
+.cp__eventdetails-btn button{
+    margin: 0;
+    font-size: 1.5vmax;
+    margin: 0 0.5vmax;
+}
+
+.cp__eventdetails-middle h1{
+    color: white;
+    text-align: center;
+    font-size: 3vmax;
+}
+
+.cp__eventdetails-middle p{
+    color: white;
+    font-size: 1.8vmax;
+}
+
+.cp__eventdetails-bottom h1{
+    color: white;
+    font-size: 3vmax;
+    font-weight: 400;
+    text-align: center;
+}

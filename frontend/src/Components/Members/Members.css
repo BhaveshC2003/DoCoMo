@@ -1,0 +1,42 @@
+.cp__members{
+    height: 18vh;
+    width: 75%;
+    display: flex;
+    margin: 1vmax auto;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 8px;
+    padding: 0.5vmax 1vmax;
+}
+
+.cp__members-img{
+    margin-right: 1vmax;
+    cursor: pointer;
+}
+
+.cp__members-img > img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.cp__members-details{
+    display: flex;
+    width: 100%;
+}
+
+.cp__members-details > div{
+    display: flex;
+    margin: auto;
+}
+
+.cp__members-details > div > b{
+    color: var(--prim-bg-color);
+    margin-right: 8px;
+    font-size: 1.6vmax;
+}
+
+.cp__members-details > div > p{
+    color: white;
+    font-size: 1.5vmax;
+    text-align: center;
+}

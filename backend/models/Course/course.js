@@ -36,6 +36,10 @@ const courseSchema = new mongoose.Schema(
                 type:String
             }
         ],
+        image:{
+            url:String,
+            public_id:String
+        },
         links:[
             {
                 type:String

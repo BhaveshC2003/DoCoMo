@@ -1,0 +1,52 @@
+.cp__student-profile-about{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.cp__student-profile-img{
+    flex: 0.15;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.cp__student-profile-about-container{
+    padding: 1vmax 0;
+    flex: 1;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cp__student-profile-about-container > div{
+    width: 50%;
+    display: flex;
+    margin: auto;
+}
+
+.cp__profile-tags{
+    width: 100%;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    padding: 0.8vmax;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cp__student-profile-about-container > div > label{
+    white-space: nowrap;
+    color: var(--prim-bg-color);
+    margin-right: 0.5rem;
+}
+
+
+.cp__student-profile-container > div > *{
+    text-align: center;
+    color: white;
+    font-size: 1.7vmax;
+}

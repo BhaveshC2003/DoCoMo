@@ -16,11 +16,11 @@ const Navbar = () => {
         <div className='cp__navbar-middle'>
             <ul>
               <li><Link to={"/"}>Home</Link></li>
-              <li><Link>Events</Link></li>
-              <li><Link>Committees</Link></li>
-              <li><Link>Courses</Link></li>
-              <li><Link>My Assignments</Link></li>
-              <li><Link>Study Material</Link></li>
+              <li><Link to={"/events"}>Events</Link></li>
+              <li><Link to={"/committees"}>Committees</Link></li>
+              <li><Link to={"/courses"}>Courses</Link></li>
+              {user &&   user.role === "student" && <li><Link to={"/assignments"}>My Assignments</Link></li>}
+              <li><Link to={"/studymaterials"} >Study Material</Link></li>
             </ul>
         </div>
         <div className='cp__navbar-right'>

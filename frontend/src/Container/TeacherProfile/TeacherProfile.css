@@ -18,12 +18,9 @@
     flex: 0.25;
     height: 100%;
     padding: 0.8rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    border-radius: 10px;
     margin-right: 2px;
     background-color: rgba(0, 0, 0, 0.85);
+    border-radius: 10px;
 }
 
 .cp__teacher-profile-options > li{
@@ -33,6 +30,7 @@
     text-align: center;
     position: relative;
     padding: 2px 0;
+    margin: 2vmin 0;
 }
 
 
